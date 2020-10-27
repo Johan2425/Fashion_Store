@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" type="text/css" href="Negocios.css" media="screen" />
+    <div id ="map"> </div> 
+<script src="https://maps.googleapis.com/maps/api/js? key=AIzaSyBCKiIqCdZGrVxx06LSbe7uG3zXOq1Cz5k&callback=initMap" async defer>
+</script>
+<script>    
+    var map;
+    function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 4.70, lng: -74.10}, zoom: 13,});
+
+    var conjunto = new google.maps.Marker({
+        position: {lat: 4.705136, lng: -74.116640},
+        map: map,
+        title: 'Bosques'
+    })
+ }
+</script>
+   </head>  
+ <body style="background-color: #9f1a55, 26, 85;">
+     
+
+<a href="Negocios.html" class="btn btn-default active" role="button" style="background-color: salmon; float: left; font-family: cursive; font-size: 25px; color: white;" >Regreso a la pagina</a>
+
+   </body> 
+</html>
